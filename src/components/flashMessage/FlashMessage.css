@@ -1,0 +1,23 @@
+.flash-message {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.flash-message div{
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    text-align: center;
+}
+
+.success-flash-message {
+    background-color: #008457;    
+}
+
+.error-flash-message {
+    background-color: red;
+}

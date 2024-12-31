@@ -1,0 +1,62 @@
+.navbar-item {
+    padding-block: 0.5rem;
+    display: flex;
+    align-items: end;
+}
+
+.navbar-item-icon {
+    margin-right: 0.5rem;
+}
+
+.header-navigation-bar {
+    display: none;
+}
+
+    .header-navigation-bar .navbar-item:hover, .header-navigation-bar .navbar-item.active {
+        color: var(--primary-color);
+    }
+
+        .header-navigation-bar .navbar-item:hover #Home,
+        .header-navigation-bar .navbar-item.active #Home,
+        .header-navigation-bar .navbar-item:hover #Movies,
+        .header-navigation-bar .navbar-item:hover #Books,
+        .header-navigation-bar .navbar-item.active #Movies,
+        .header-navigation-bar .navbar-item.active #Books {
+            fill: var(--primary-color);
+        }
+
+        .header-navigation-bar .navbar-item:hover #Shows path,
+        .header-navigation-bar .navbar-item.active #Shows path {
+            stroke: var(--primary-color);
+        }
+
+.main-navigation-bar .navbar-items {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.main-navigation-bar .navbar-item {
+    margin-right: 0.75rem;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    background-color: slategray;
+}
+
+.main-navigation-bar .navbar-item:hover {
+    background-color: var(--primary-color);
+}
+
+    .main-navigation-bar .navbar-item.active {
+        background-color: var(--primary-color);
+    }
+
+@media(min-width: 800px){
+    .header-navigation-bar {
+        display: initial;
+    }
+
+    .main-navigation-bar {
+        display: none;
+    }
+}

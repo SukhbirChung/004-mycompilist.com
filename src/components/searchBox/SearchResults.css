@@ -1,0 +1,9 @@
+.SearchResults{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.close-search-results-container{
+    text-align: right;
+}
